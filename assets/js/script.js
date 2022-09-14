@@ -219,7 +219,7 @@ const onImagePrev = function (event) {
 		sliderImage.setAttribute("src", newImageSrc);
 	} else {
 		removeClass(currentImage, "js-slider__thumbs-image--current");
-		setAttributes(
+		setAttributesFromAnotherAttr(
 			sliderImage,
 			thumbsSection.lastElementChild.previousElementSibling.firstElementChild,
 			"src"
